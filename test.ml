@@ -13,13 +13,13 @@ let test (s : string) : unit =
   Printf.printf "Contenu de la file :\n";
   
   for i=0 to size*4-1 do
+    C.next(); 
     begin
       if i mod size = 0 then
         Printf.printf "\n%i : %s\n" i (C.queue())
       else
         Printf.printf "%i : %s\n" i (C.queue()) 
     end;
-      C.next(); 
   done
 
 let _ =

@@ -7,6 +7,7 @@ module type CIRCUIT = sig
   val next : unit -> unit (*'a transition*)
   val queue : unit -> string
   val size : unit -> int
+  val transitions_of_string : string -> char transition list
 end
 
 exception Queue_is_blocked

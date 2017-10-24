@@ -1,4 +1,4 @@
-default: test.byte
+default: posttheta.byte
 
 ALL = circuit.ml
 BYTE = $(ALL:.ml=.cmo)
@@ -26,3 +26,4 @@ OCAMLDEP = ocamldep
 .PHONY: clean
 clean:
 	rm -f dm.* *.cmo *.cmi *.cmx *.o .depend
+
